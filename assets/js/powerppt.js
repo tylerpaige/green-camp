@@ -34,17 +34,17 @@
                         conDown = $(controls).children('.down'),
                         conLeft = $(controls).children('.left'),
                         manageControls = function(slide) {
-                            if(slide.parent().hasClass(slideClass) == false){ $(conUp).fadeOut(); }
-                            else if($(conUp).is(':hidden')) { $(conUp).fadeIn(); }
+                            if(slide.parent().hasClass(slideClass) == false){ $(conUp).css('visibility','hidden'); }
+                            else if($(conUp).css('visibility') == 'hidden') { $(conUp).css('visibility','visible'); }
                             
-                            if((slide.next().hasClass(slideClass) == false) && (slide.hasClass('jump') == false)){ $(conRight).fadeOut(); }
-                            else if($(conRight).is(':hidden')) { $(conRight).fadeIn(); }
+                            if((slide.next().hasClass(slideClass) == false) && (slide.hasClass('jump') == false)){ $(conRight).css('visibility','hidden'); }
+                            else if($(conRight).css('visibility') == 'hidden') { $(conRight).css('visibility','visible'); }
                             
-                            if(slide.prev().hasClass(slideClass) == false){ $(conLeft).fadeOut(); }
-                            else if($(conLeft).is(':hidden')) { $(conLeft).fadeIn(); }
+                            if(slide.prev().hasClass(slideClass) == false){ $(conLeft).css('visibility','hidden'); }
+                            else if($(conLeft).css('visibility') == 'hidden') { $(conLeft).css('visibility','visible'); }
                             
-                            if(slide.children('.'+slideClass).length <= 0){ $(conDown).fadeOut(); }
-                            else if($(conDown).is(':hidden')) { $(conDown).fadeIn(); }
+                            if(slide.children('.'+slideClass).length <= 0){ $(conDown).css('visibility','hidden'); }
+                            else if($(conDown).css('visibility') == 'hidden') { $(conDown).css('visibility','visible'); }
                         };
                 } else {
                     var manageControls = function(){ return false; };
@@ -64,83 +64,82 @@
                      }
                 });
                 
-                 keypress.combo('right', function() {
-                     index = $(cur).siblings(slide).addBack().index(cur);
-                     if(index < $(cur).siblings(slide).length){
-                         target = index+1; 
-                         cur = $(cur).siblings(slide).addBack().eq(target);    		
-                         $(cur).addClass('slideLeft recent').one(transitionEnd, function(){ 
-                             $(this).addClass('visible').removeClass('slideLeft recent').prevAll().removeClass('visible slideLeft slideRight recent');
-                         }); 
-                         $('.recent').not(cur).removeClass('recent');
-                     } else if($(cur).hasClass('jump')) {
-                         target = cur.attr('data-target');
-                         cur = $(target);
-                         $(cur).addClass('slideLeft recent').one(transitionEnd, function(){ 
-                             $('.visible').not(cur).removeClass('visible slideLeft slideRight recent');
-                             $(this).addClass('visible').removeClass('slideLeft recent');
-                         }); 
-                         $('.recent').not(cur).removeClass('recent');
-                     }
-                     manageControls($(cur));
-                 });
-                 keypress.combo('left', function() {
-                     index = $(cur).siblings(slide).addBack().index(cur);
-                     if(index > 0){
-                         target = index-1;
-                         cur = $(cur).siblings(slide).addBack().eq(target);
-                         
-                         $(cur).addClass('slideRight recent').one(transitionEnd, function() {
-                            $(this).addClass('visible').removeClass('slideRight recent').nextAll().removeClass('visible slideRight recent');
-                         });
-                         $('.recent').not(cur).removeClass('recent'); //Only most recent advance should be called "Recent"
-                     }
-                     manageControls($(cur));
-                 });
-                 keypress.combo('down', function() {
-                     if($(cur).children(slide).length > 0){
-                         cur = $(cur).children(slide).eq(0);
-                         $(cur).addClass('slideUp').one(transitionEnd, function() {
-                             $(this).addClass('visible').removeClass('slideUp').parent('.visible').removeClass('visible');
-                         });
-                     }
-                     manageControls($(cur));
-                 });
-                 keypress.combo('up', function() {
-                     if($(cur).parent().hasClass(slideClass)){ // only ascend if the target is a slide, not the container
-                         index = cur;
-                         cur = cur.parent();
-                         index.siblings('.content').parent().addBack().addClass('visible');
-                         index.addClass('slideOut').one(transitionEnd, function() {
-                             $(this).removeClass('visible slideOut').siblings().removeClass('slideOut recent visible');
-                         });
-                         manageControls(cur);
-                     }
-                    
-                 });
-                 keypress.combo('esc', function() {
-                     if(cur.hasClass('esc')){ //if this slide has a target for an escape
-                         save = cur, //save the current slide for reference
-                         target = save.attr('data-target'); //set the target
-                         cur = $(target); //make the target the current slide
-                         cur.addClass('visible');
-                         save.addClass('slideOut').one(transitionEnd, function() {
-                             $(this).removeClass('visible slideOut recent');
-                         });
-                         manageControls(cur);
-                     } else if(save != null){ //if slide doesn't have an escape, but does have a save state (I.E. it was the target of an escape)
-                         target = save;
-                         save = null;
-                         target.addClass('visible');
-                         cur.addClass('slideOut').one(transitionEnd, function() {
-                             $(this).removeClass('visible slideOut recent');
-                         });
-                         cur = target;
-                         manageControls(cur);
-                     }
-                 });
+                
+                $(document).keydown(function(event) {
+                    switch (event.keyCode) {
+                        case 27: //escape key
+                            if(cur.hasClass('esc')){ //if this slide has a target for an escape
+                                save = cur, //save the current slide for reference
+                                target = save.attr('data-target'); //set the target
+                                cur = $(target); //make the target the current slide
+                                cur.addClass('visible');
+                                save.addClass('slideOut').one(transitionEnd, function() {
+                                    $(this).removeClass('visible slideOut recent');
+                                });
+                            } else if(save != null){ //if slide doesn't have an escape, but does have a save state (I.E. it was the target of an escape)
+                                target = save;
+                                save = null;
+                                target.addClass('visible');
+                                cur.addClass('slideOut').one(transitionEnd, function() {
+                                    $(this).removeClass('visible slideOut recent');
+                                });
+                                cur = target;
+                            }
+                            break;
+                        case 37: //left arrow
+                            index = $(cur).siblings(slide).addBack().index(cur);
+                            if(index > 0){
+                                target = index-1;
+                                cur = $(cur).siblings(slide).addBack().eq(target);
+                                
+                                $(cur).addClass('slideRight recent').one(transitionEnd, function() {
+                                   $(this).addClass('visible').removeClass('slideRight recent').nextAll().removeClass('visible slideRight recent');
+                                });
+                                $('.recent').not(cur).removeClass('recent'); //Only most recent advance should be called "Recent"
+                            }
+                            break;
+                        case 38: //up arrow
+                            if($(cur).parent().hasClass(slideClass)){ // only ascend if the target is a slide, not the container
+                                index = cur;
+                                cur = cur.parent();
+                                index.siblings('.content').parent().addBack().addClass('visible');
+                                index.addClass('slideOut').one(transitionEnd, function() {
+                                    $(this).removeClass('visible slideOut').siblings().removeClass('slideOut recent visible');
+                                });
+                            }
+                            break;
+                        case 39: //right arrow
+                            index = $(cur).siblings(slide).addBack().index(cur);
+                            if(index < $(cur).siblings(slide).length){
+                                target = index+1; 
+                                cur = $(cur).siblings(slide).addBack().eq(target);    		
+                                $(cur).addClass('slideLeft recent').one(transitionEnd, function(){ 
+                                    $(this).addClass('visible').removeClass('slideLeft recent').prevAll().removeClass('visible slideLeft slideRight recent');
+                                }); 
+                                $('.recent').not(cur).removeClass('recent');
+                            } else if($(cur).hasClass('jump')) {
+                                target = cur.attr('data-target');
+                                cur = $(target);
+                                $(cur).addClass('slideLeft recent').one(transitionEnd, function(){ 
+                                    $('.visible').not(cur).removeClass('visible slideLeft slideRight recent');
+                                    $(this).addClass('visible').removeClass('slideLeft recent');
+                                }); 
+                                $('.recent').not(cur).removeClass('recent');
+                            }
+                            break;
+                        case 40: //down arrow
+                            if($(cur).children(slide).length > 0){
+                                cur = $(cur).children(slide).eq(0);
+                                $(cur).addClass('slideUp').one(transitionEnd, function() {
+                                    $(this).addClass('visible').removeClass('slideUp').parent('.visible').removeClass('visible');
+                                });
+                            }
+                            break;
+                    }
+                    manageControls(cur);
+                });
                  
-                 manageControls($(cur));
+                manageControls($(cur));
                  
             });
         }

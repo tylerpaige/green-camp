@@ -182,7 +182,7 @@ html, body{
     z-index: 1001;
 }
 #controls *{
-    /*display: hidden;*/
+    /*visibility: hidden;*/
 }
 .up, .down{
     height: 25px;
