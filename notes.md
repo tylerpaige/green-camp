@@ -65,5 +65,23 @@
 --- 
 ## So, what's this actually about to you?
 1. All-too-common process of reaching for goals, only to be barred access, and to navigate restrictions and obstacles.
-2. Explorations of past/present/future and their overlaps. This is a carryover from the initial thoughts going into the Green Camp/Ringwood videos, but my hope is to decipher what role the past actually has in the present. To understand the logic of nostalgia and its impact on future visions.
+2. Explorations of past/present/future and their overlaps. This is a carryover from the initial thoughts going into the Green Camp/Ringwood videos, but my hope is to decipher what role the past actually has in the present. To understand the logic of nostalgia and its impact on future visions. On a similar note, I am thinking about how cyclical it all is, and still predictable, even though we keep telling ourselves to "learn from history's mistakes"
 3. Speculation/expectations and eventual realization
+
+## Asher
+- Narrative doesn't start with a hook. It's not really an introduction. It doesn't say anything about the hunt.
+- It starts off with loose language, and just gets looser. It's never tight. 
+-- I'm not sure if I should change it, though. I am certainly interested in blurring whether this is history, a nonfiction account, or complete fiction. But maybe the way it is now leans too far towards just fiction.
+-- For one thing, it never says we sold it anymore. I recall Hito saying to remove that, but maybe it decontextualizes it too much.
+-- when i showed it to hito, she told me to remove it because i providing too much information to mythologize green camp.
+-- but now i'm wondering if it pushes it too far. i am looking to mythologize the place (or at least build up the reputation that green camp had for us), but i don't want to blow it out of the water. i do wnt there to be some roots in reality. maybe it's good to mention green camp's sale: to build up the mythology but then suggest a disconnect
+- It doesn't make the story seem plausible at all, so there's nothing to suggest the whole thing is anything other than a work of fiction
+- What's the logic of choosing captions vs centered text
+- None of the slides look very "complete" (with the exception of the origin)
+- It's hard to present something you want to be an artifact already. It's like you want this to be a website randomly encountered (or that you wish *you* had encountered it randomly)
+-- like you want it to have just randomly occurred "naturally" but you actually planted it.
+- The idea of getting lost is important (space was lost, history was lost, position is lost) → getting lost on the internet? clicking through stream of consciousness links?
+-- it's like it has to be dumped in random places to get user input and understand the work
+--- but *where?*
+- What is the significance of having a definitive start point? I can agree with having multiple valid endpoints, but right now that doesn't seem to be the case. they just end, they're not definitive.
+- A critique on slideshows? Yes, I guess it is.

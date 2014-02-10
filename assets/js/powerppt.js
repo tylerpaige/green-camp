@@ -21,6 +21,13 @@
                     slideClass = slide.substr(1),
                     loader = '<div class="loader"><img src="'+o.loader+'" /><br/>img loading</div>';
                     
+                if(o.loader != false){ //download the loader image first
+                    function loaded() { console.log('loaded the loader'); }
+                    loadImg = new Image();
+                    loadImg.src = o.loader;
+                    loadImg.onLoad = loaded();
+                }
+                    
                 if(o.origin == false){ cur = $(this).find(slide).eq(0); }
                 else { cur = $(this).find(o.origin); }
                 $(cur).addClass('visible');
@@ -52,7 +59,7 @@
                 
                 $.each(slides, function() {
                      var slide = $(this).not('.text').children('.content'),
-                         img = $(slide).children('img');
+                         img = $(slide).children('img').eq(0);
                      if(img.length > 0){
                          var url = $(img).attr('src');
                          $(img).hide();

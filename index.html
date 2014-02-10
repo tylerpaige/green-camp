@@ -9,7 +9,6 @@
 <link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/specific.css" />
 <script src="assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="assets/js/keypress-1.0.9.min.js" type="text/javascript"></script>
 <script src="assets/js/powerppt.js" type="text/javascript"></script>
 <script>
 $(function() {	
@@ -20,42 +19,37 @@ $(function() {
 </script>	
 </head>
 <body>
-<img src="assets/img/loader-white.gif" class="firstLoad" />
+
 <div id="container">
     <div class="slide" id="origin">
-        <div class="content yellow outline">
+        <div class="content">
             <h1>Green Camp</h1>
             <div class="caption">Control this slideshow with your keyboard arrow keys (see the upper left corner).</div>
-            <img src="images/archive-page1.jpg" />
+            <img src="images/archive-page1-green-shadow.png" alt="" />
         </div>
     </div>
-    <div class="slide text esc" data-target="#origin">
+    <div class="slide text esc imgShadows" data-target="#origin">
         <div class="content">
-            <p>Before things were the way they are now, we had a place to go.</p>
-            <p>Working against tuition brought us together with alumni who had been there first hand. They told us all the stories. Green Camp wove seamlessly into the philosophy of our school: a modest set-up activated by a community working together. They told us about the bus that would deliver them into the woods, where they could escape the concrete and brick of the city. They told us how ideas and collaborations spurred on the lawn or by the river. They told us how Green Camp was as important as the school itself to their education.</p>
-            <!-- what's something mythological about a free Cooper that could be used to describe Green Camp? -->
-            
-            <p>There was something special about those woods—something they can't seem to really describe. It was an experience, apparently.</p>
+            <!--<p>Before things were the way they are now, we had a place to go.</p>-->
+            <p>Cooper Union sold it a few decades ago, but working against tuition brought us together with alumni who had actually been there first hand. They told us all the stories. Green Camp wove seamlessly into the philosophy of our school: a modest set-up activated by a community working together. They told us about the bus that would deliver them into the woods, where they could escape the concrete and brick of the city. They told us how ideas and collaborations spurred on the lawn or by the river. They told us how Green Camp was as important as the school itself to their education.</p>
+            <!--<img src="images/what-was-green-camp.png" />-->
+            <p>There was something special about those woods—something they can't seem to really describe: something we wouldn't ever really understand, apparently.</p>
+            <img src="images/better-than-my-canvas.jpg" alt="" />
         </div>
-        <div class="slide">
-            <div class="content fill white shadow">
-                <div class="caption">
-                    <h1>"First Green Camp, now the whole school!"</h1>
-                </div>
-                <img src="images/now-the-whole-school.jpg" />
+        <div class="slide" id="imSorry">
+            <div class="content yellow shadow">
+                <h1>"I'm sorry you'll never get to experience that place"</h1>
+                <img src="images/1970.jpg" />
             </div>
-        </div>
-        <div class="slide text">
-            <div class="content">
-                <p>Green Camp would appear spontaneously in conversations about Cooper's cornucopia of problems. Someone says something reductive: they have a solution to some issue, any issue. "If only we cut the president's salary, we would be fine!" Someone else nullifies the solution with context for a larger issue, then they reductively offer a solution to larger context. "It's not just this president. George Campbell's retirement package topped Top 5 lists. We need to trim down the whole administration!" Then it repeats. "It's not just cutting spending, it's bringing in <b>sustainable</b> revenue. Why are we always making one-time sales?"</p>
-                <p>Then someone mentions Green Camp.</p>
-            </div>
-            <div class="slide">
-                <div class="content yellow shadow">
-                    <h1>"I'm sorry you'll never get to experience that place"</h1>
-                    <img src="images/1970.jpg" />
+    
+
+            <div class="slide text">
+                <div class="content">
+                    <p>Green Camp would appear spontaneously in conversations about Cooper's array of problems. Someone says something reductive: they have a solution to some issue, any issue. "If only we cut the president's salary, we would be fine!" Someone else nullifies the solution with context for a larger issue, then they reductively offer a solution to larger context. "It's not just this president. George Campbell's retirement package topped Top 5 lists. We need to trim down the whole administration!" Then it repeats. "It's not just cutting spending, it's bringing in <b>sustainable</b> revenue. Why are we always making one-time sales?"</p>
+                    <p>Then someone mentions Green Camp.</p>
                 </div>
-                <!-- Stacks of conversations -->
+    <!--- fix this --->
+                    <!-- Stacks of conversations -->
                 <div class="slide text" id="ifWe">
                     <div class="content">
                         <h1>If we had never sold Green Camp, we would be okay today</h1>
@@ -67,183 +61,202 @@ $(function() {
                     <div class="slide text">
                         <div class="content">
                             <p>“It’s not that I don’t care...”</p>
-                            <p>“No, I know. I feel the same. It’s like there’s not really proposals, there’s orders. And there’s not discussions, there’s wars of attrition. Who can last the longest through a 5 hour meeting after a full day? But really, all along the decision has been made, and we’re doing what we’re doing, we just need to have that facade. I’m tired of it.  I’m tired of being just a body in a room.”</p>
-                            <p>“I’m just busy with studio.”</p>
+                            <p>“No, I know. I feel the same. It’s like there are not proposals, there are orders. And there are not discussions, there are wars of attrition. Who can last the longest through a 5 hour meeting after a full day? But really, all along the decision has been made, and we’re doing what we’re doing, we just need to have that facade. I’m tired of it.  I’m tired of being just a body in a room.”</p>
+                            <p>“I’m just busy with my studio work.”</p>
                             <img src="images/new-school-anarchist.jpg"/>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slide jump" data-target="#somehow">
-                <!-- I'm unsure about including duplicates. Just in case I change my mind, this is a duplicate -->
-                <div class="content fill white shadow">
-                    <h1>"This is an image of it! That's what it looked like? They look like us! That looks like Troy!"</h1>
-                    <img src="images/they-look-like-us.png" />
+                <div class="slide">
+                    <div class="content fill white shadow">
+                        <div class="caption">
+                            <h1>"First Green Camp, now the whole school!"</h1>
+                        </div>
+                        <img src="images/now-the-whole-school.jpg" />
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="slide text">
-            <div class="content">
-                <p>Green Camp became a premonition of the soon-to-be New Cooper Union. It was a destroyed utopia. Green Camp was something good turned in for money. We felt that once Green Camp had been lost, it could only exist in a youthful idealism.</p>
-                <p><i>Yes, obviously a Green Camp would be great, but pragmatically it just can't work. The poetics are nice, but the fact of the matter is that Green Camps cost money—money we don't have. That's the problem with this generation: they think they deserve all these privileges. Green Camps are a privilege, not a right.</i></p>
-                <p>And that's when it became apparent that no one talked about present-day Green Camp. Maybe Green Camp still exists somewhere, out there. Maybe Green Camp exists for another institution. If we can find Green Camp still exists, maybe our other idealisms won't seem so far-fetched. If we can find Green Camp, maybe I will feel grounded.</p>
-                 <!-- this could be a separate slide with a photo of the green camp book in the lubalin center -->
             </div>
             <div class="slide text">
                 <div class="content">
-                    <!-- Not only a tangent, but a contradiction -->
-                    <p>But a destroyed utopia? Let's be frank here, free education is nice, but Cooper Union was no utopia. </p>
-                    <p>A meritocracy? What is our concept of merit? Money buys you merit, then.</p>
+                    <p>Green Camp became a premonition of the soon-to-be New Cooper Union. It was a destroyed utopia. Green Camp was something good turned in for money. We felt that once Green Camp had been lost, it could only exist in a youthful idealism.</p>
+                    <p><i>Yes, obviously a Green Camp would be great, but pragmatically it just can't work. The poetics are nice, but the fact of the matter is that Green Camps cost money—money we don't have. That's the problem with this generation: they think they deserve all these privileges. Green Camps are a privilege, not a right.</i></p>
+                    <p>And that's when it became apparent that no one talked about present-day Green Camp. Maybe Green Camp still exists somewhere, out there. Maybe Green Camp exists for another institution. If we can find Green Camp still exists, maybe our other idealisms won't seem so far-fetched. If we can find Green Camp, maybe I will feel grounded.</p>
+                     <!-- this could be a separate slide with a photo of the green camp book in the lubalin center -->
+                </div>
+                <div class="slide text imgShadows">
+                    <div class="content">
+                        <!-- Not only a tangent, but a contradiction -->
+                        <img src="images/self-contained.jpg" />
+                        <p>But a destroyed utopia? Let's be frank here, free education is nice, but Cooper Union was no utopia. </p>
+                        <p>A meritocracy? What is our concept of merit? Money buys you merit, then.</p>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="slide text">
-            <div class="content">
-                <p>So we began a search for Green Camp inside of Cooper Union. Green Camp the actual may have been lost—forfeited—but traces of it still existed inside the institution. Alumni made books about it. We found a silent film in the library film archives.</p>
-            </div>
-            <div class="slide">
-                <div class="content fill white shadow">
-                    <h1>"This is an image of it! That's what it looked like? They look like us! That looks like Troy!"</h1>
-                    <img src="images/they-look-like-us.png" />
-                </div>
-            </div>
-            <div class="slide text" id="somehow">
+            <div class="slide text imgShadows">
                 <div class="content">
-                    <p>Somehow the images were shocking. I wanted to think Green Camp was real, but somewhere deep down I must have convinced myself Green Camp was impossible. But here it was! This was Green Camp recorded on film! This record proved me simultaneously right and wrong! What ambivalence!</p>
+                    <p>So we began a search for Green Camp inside of Cooper Union. Green Camp the actual may have been lost—forfeited—but traces of it still existed inside the institution. Alumni made books about it. We found a silent film in the library film archives.</p>
+                    <img src="images/i-loved-green-camp.jpg" />
                 </div>
-            </div>
-        </div>
-        
-
-        <div class="slide">
-            <div class="content stretch">
-                <div class="caption white shadow">
-                    Another film advertised Cooper in the 1950s. It boasted of Green Camp: it was a selling point!
-                </div>
-                <img src="images/a-symbol-in-brownstone.png" />
-            </div>
-            <div class="slide" id="tennis">
-                <div class="content fill">
-                    <div class="caption white shadow">
-                        Tennis!
-                    </div>
-                    <img src="images/tennis-archive.png" />
-                </div>
-            </div>
-            <div class="slide">
-                <div class="content fill">
-                    <div class="caption white shadow">
-                        Basketball!
-                    </div>
-                    <img src="images/basketball-archive.png" />
-                </div>
-            </div>
-            <div class="slide">
-                <div class="content fill">
-                    <div class="caption white shadow">
-                        Landscape surveying! Painting! All this and more!
-                    </div>
-                    <img src="images/all-this-and-more.png" />
-                </div>
-            </div>
-        </div>
-        <div class="slide text">
-            <div class="content">
-                <p>But they were, after all, archives. These documents proved Green Camp exist<i>ed</i>, but not that it currently exist<i>s</i>. We tried to find ourselves in the films, but we couldn't do it seamlessly. And then it dawned on us: maybe Green Camp needed a new document. Maybe we had to seek out Green Camp the actual in existence—the place.</p>
-                <p>No one seemed to know what Green Camp was presently. No one could say what happened to Green Camp after it was sold. The institutional memory simply stopped after 1973. If for no other reason, we wanted to find Green Camp for closure. We were so used to finding another container, a larger trouble, a bigger boss. Happy ending or not, we needed an end to <i>some</i>thing.</p>
-            </div>
-            <!-- speculations here -->
-        </div>
-        <div class="slide text">
-            <div class="content">
-                <p>We used the archived material and the stories we heard to find Green Camp. Green Camp was likely some green colored space on a map, we thought.</p>
-            </div>
-            <!-- examples and images of archived material here -->
-        </div>
-        <div class="slide">
-            <div class="content fill shadow">
-                <h1>And so we began our search for green spaces on a map.</h1>
-                <img src="images/green-spaces-whiteout.jpg" />
-            </div>
-            <div class="slide">
-                <div class="content fill"><img src="images/green-space2.jpg"/></div>
                 <div class="slide">
+                    <div class="content fill white shadow">
+                        <h1>"This is an image of it! That's what it looked like? They look like us! That looks like Troy!"</h1>
+                        <img src="images/they-look-like-us.png" />
+                    </div>
+                </div>
+                <div class="slide text" id="somehow">
+                    <div class="content">
+                        <p>Somehow the images were shocking. I wanted to think Green Camp was real, but somewhere deep down I must have convinced myself Green Camp was impossible. But here it was! This was Green Camp recorded on film! This record proved me simultaneously right and wrong! What ambivalence!</p>
+                    </div>
+                </div>
+            </div>
+            
+    
+            <div class="slide">
+                <div class="content stretch">
+                    <div class="caption white shadow">
+                        Another film advertised Cooper in the 1950s. It boasted of Green Camp: it was a selling point!
+                    </div>
+                    <img src="images/a-symbol-in-brownstone.png" />
+                </div>
+                <div class="slide" id="tennis">
                     <div class="content fill">
-                        <div class="caption shadow">
-                            We searched the landscapes for things we knew were a part of Green Camp.
+                        <div class="caption white shadow">
+                            Tennis!
                         </div>
-                        <img src="images/ringwood-map.png" />
+                        <img src="images/tennis-archive.png" />
                     </div>
                 </div>
                 <div class="slide">
                     <div class="content fill">
                         <div class="caption white shadow">
-                            There was a bridge and a dam that alumni had built as a gift to space.
+                            Basketball!
                         </div>
-                        <img src="images/bridge.jpg" />
+                        <img src="images/basketball-archive.png" />
                     </div>
-                    <div class="slide jump" data-target="#foundThis"><div class="content fill"><img src="images/dam-on-map.jpg"/></div></div>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="content fill"><img src="images/green-space3.jpg"/></div>
                 <div class="slide">
-                    <div class="content white">
-                        <h1>I don't suppose we ever considered it could have been torn down for condos or a Wal-Mart.</h1>
+                    <div class="content fill">
+                        <div class="caption white shadow">
+                            Landscape surveying! Painting! All this and more!
+                        </div>
+                        <img src="images/all-this-and-more.png" />
                     </div>
                 </div>
             </div>
-            <div class="slide">
-                <div class="content fill"><img src="images/green-space5.jpg"/></div>
-            </div>
-            <div class="slide">
-                <div class="content fill"><img src="images/green-space7.jpg"/></div>
-            </div>
-            <div class="slide">
-                <div class="content fill"><img src="images/green-space4.jpg"/></div>
-            </div>
-            <div class="slide">
-                <div class="content fill"><img src="images/green-space1.jpg"/></div>
-            </div>
-            
-            
-        </div>
-        
-        <div class="slide" id="foundThis">
-            <div class="content">
-                <div class="caption white">
-                    And then we found this.
+            <div class="slide text">
+                <!-- This slide needs rewriting -->
+                <div class="content">
+                    <p>But they were, after all, archives. These documents proved Green Camp existed, but not that it currently exists. We tried to find ourselves in the films, but we couldn't do it seamlessly. And it became clear: Green Camp needed a new document. Maybe we had to seek out Green Camp the actual in existence—the place.</p>
+                    <p>No one seemed to know what Green Camp was presently. No one could say what happened to Green Camp after it was sold. The institutional memory simply stopped after 1973. If for no other reason, we wanted to find Green Camp for closure. We were so used to finding another container, a larger trouble, a bigger boss. We needed an end to something, for once.</p>
                 </div>
-                <img src="images/found-sports.png" />
-            </div>
-            <div class="slide esc" data-target="#tennis">
-                <div class="content white">
-                    <p>Tennis!<br/>Basketball!</p>
-                    <img src="images/tennis-courts.png" />
+                <div class="slide text">
+                    <div class="content">
+                        <p>What if Green Camp is an artist residency program now?</p>
+                        <p>What if Green Camp was once free but because of continuous structural deficits is forced to charge fees to its residents—leading to a massive drop in applicant interest because artists who can pay for residencies will go to programs that offer more in return than the woods?</p>
+                    </div>
+                    <div class="slide text">
+                        <div class="content">
+                            <p>Green Camp could be a park. At least in that case it would be available for everyone. Green Camp could offer its ethics and inspiration to everyone. It may not be the grounds for collaboration for a university, but maybe that's for the best. Maybe more people will benefit from the Green Camp. Maybe this is a more perfect form of education: a modest space that everyone can activate, not just those who were admitted. Green Camp's sale might have opened its doors! Not closed them!</p>
+                        </div>
+                        <div class="slide text">
+                            <div class="content">
+                                <p>It's possible that another Cooper exists our there... There could be some other institution offering a free arts and sciences education to young people exclusively on the basis of merit. They could have picked up where Green Camp left off. I wonder if Green Camp simply changed hands. Maybe nothing has changed but the owner.</p>
+                            </div>
+                            <div class="slide">
+                                <div class="content stretch white shadow">
+                                    <h2>I bet NYU bought it for its Art-as-Activism, Community Practice, and Public Relational Aesthetics MFA Program</h2>
+                                    <img src="images/nyu-mfa.jpg"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide text">
+                        <div class="content">
+                            <img src="images/nyt-botanic-garden.jpg" />
+                            <p>Oh god, what if Green Camp is one of those public parks that's private to a certain type of public: like a public lake that's landlocked by private properties so there's no public entrance, or a park that removes all its benches and trashcans so the homeless won't spend too much time there.</p>
+                            <img src="images/privatepark.png" />
+                        </div>
+                        <div class="slide text">
+                            <div class="content">
+                                <p>What if Green Camp is entirely private property? What if Green Camp is just a bunch lake houses and the tennis courts are for the winding housing development that wraps around it.</p>
+                                <p>Or maybe some multi-millionaire industrialist bought the whole thousand acres and is just sitting on it until he thinks of a use for it. You know, maybe the multi-millionaire industrialist some type of closeted philanthropist. We could find him at Green Camp and appeal for something!</p>
+                                <img src="images/wizard.jpg"/>
+                                <!-- Off of here you can speculate about how we could take of an abandoned space. Then when you say "If we we never sold it", you can jump to here (or vice versa). -->
+                                <!-- alternatively this could link to history about green camp (how it was owned as peter cooper's estate. this could be done, i think, without giving too much information and making green camp seem like a real place. -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="content white">
-                    <p>Soccer!</p>
-                    <img src="images/soccer-fields.png" />
+                <div class="slide white">
+                    <div class="content">
+                        <p>CV check: did you go when it was free or not?</p>
+                    </div>
                 </div>
-                
-            </div>
-        </div>
-        <div class="slide">
-            <div class="content stretch white">
-                <div class="caption">This must be the place!</div>
-                <img src="images/asher-in-the-woods.png" />
             </div>
             <div class="slide text">
                 <div class="content">
-                    <p>With a physical location, we prepared for Green Camp—to meet this space in person. First we tried to brainstorm projects we could do there, but we only ended up with anxiety. How could we prepare for this space? We don't know anything about its current state.</p>
-                    <p>But that was the point! How do we actually connect with this space? Can we be engaged here? What place does this trace from the past have in the present?</p> <!-- WTF DOES THAT MEAN -->
+                    <p>We used the archived material and the stories we heard to find Green Camp. Green Camp was likely some green colored space on a map, we thought.</p>
+                </div>
+                <!-- examples and images of archived material here -->
+            </div>
+            <div class="slide">
+                <div class="content fill">
+                    <h1>And so we began our search for green spaces on a map.</h1>
+                    <img src="images/green-spaces-whiteout.jpg" />
+                </div>
+                <div class="slide">
+                    <div class="content fill">
+                        <img src="images/green-space2.jpg"/>
+                    </div>
+                    <div class="slide">
+                        <div class="content fill">
+                            <div class="caption shadow">
+                                We searched the landscapes for things we knew were a part of Green Camp.
+                            </div>
+                            <img src="images/ringwood-map.png" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content fill">
+                            <div class="caption white shadow">
+                                There was a bridge and a dam that alumni had built as a gift to space.
+                            </div>
+                            <img src="images/bridge.jpg" />
+                        </div>
+                        <div class="slide jump" data-target="#foundThis">
+                            <div class="content fill">
+                                <img src="images/dam-on-map.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content fill">
+                        <img src="images/green-space3.jpg"/>
+                    </div>
+                    <div class="slide">
+                        <div class="content white">
+                            <h1>I don't suppose we ever considered it could have been torn down for condos or a Wal-Mart.</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="content fill"><img src="images/green-space5.jpg"/></div>
+                </div>
+                <div class="slide">
+                    <div class="content fill"><img src="images/green-space7.jpg"/></div>
+                </div>
+                <div class="slide">
+                    <div class="content fill"><img src="images/green-space4.jpg"/></div>
+                </div>
+                <div class="slide">
+                    <div class="content fill"><img src="images/green-space1.jpg"/></div>
                 </div>
             </div>
             <div class="slide">
                 <div class="content fill yellow shadow">
-                    <div class="caption yellow shadow">We drove to the spot.</div>
+                    <h2 class="yellow outline shadow">We drove from green shape to green shape, checking every one against what we imagined Green Camp to be.</h2>
                     <img src="images/car.jpg"/>
                 </div>
                 <div class="slide">
@@ -265,9 +278,35 @@ $(function() {
                     <div class="content stretch"><img src="images/ezpass6.jpg" /></div>
                 </div>
             </div>
+            <div class="slide" id="foundThis">
+                <div class="content fill">
+                    <div class="caption white">
+                        And then we found this.
+                    </div>
+                    <img src="images/found-sports.png" />
+                </div>
+                <div class="slide esc" data-target="#tennis">
+                    <div class="content white">
+                        <p>Tennis!<br/>Basketball!</p>
+                        <img src="images/tennis-courts.png" />
+                    </div>
+                </div>
+                <div class="slide jump" data-target="#thisMust">
+                    <div class="content white">
+                        <p>Soccer!</p>
+                        <img src="images/soccer-fields.png" />
+                    </div>
+                </div>
+            </div>
+            <div id="thisMust" class="slide">
+                <div class="content stretch white">
+                    <div class="caption">This must be the place!</div>
+                    <img src="images/asher-in-the-woods.png" />
+                </div>
+            </div>
             <div class="slide text">
                 <div class="content">
-                    <p>And we wandered around the mountain roads until we finally found Farm Road—just as it was getting dark. At one lane, we had to roll down the hilly road slowly, our excitement peaking as we thought we'd finally reached Green Camp.</p>
+                    <p>Driving down Farm Road—just as it was getting dark. At one lane, we had to roll down the hilly road slowly, our excitement peaking as we thought we'd finally reached Green Camp.</p>
                 </div>
             </div>
             <div class="slide">
@@ -290,15 +329,38 @@ $(function() {
                         </div>
                     </div>
                     <div class="slide">
-                        <div class="content fill"><img src="images/ringwood-closed.jpg"/></div>
-                    </div>
-                    <div class="slide text">
-                        <div class="content">
-                            <p>Likewise, the </p>
+                        <div class="content white">
+                            <p>We recoiled—not in defeat, but in caution. The inheritance of the space was confusing. We began to question what we were actually doing at Green Camp.</p>
+                            <!-- what do you actually want to say here? recoiled, went back to contemplate because we first questioned what connection we actually had to the space. -->
                         </div>
                     </div>
+                    <div class="slide">
+                        <div class="content">
+                            <img src="images/manor.jpg" />
+                            <div class="caption white">Our only instinct was to retreat to The Ringwood Manor, Peter Cooper's historic home. We fantasized about the romance of finding refuge where our school's founder lived. How fitting should it be that when a part of the institution goes astray—when we lose something—we may return to the foundation and build it again.</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content white shadow">
+                            <img src="images/manor-student.jpg" />
+                            <p>It almost made more sense that we could go searching for a missing piece and end up finding the core of the history. Such poetry!</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content fill">
+                            <img src="images/manor-closed.jpg" />
+                        </div>
+                        <div class="slide jump" data-target="#origin">
+                            <div class="content white">
+                                <h1>And yet, sometimes you have no choice but to admit defeat.</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content fill"><img src="images/ringwood-closed.jpg"/></div>
+                    </div>
                 </div>
-                <div class="slide text">
+                <div class="slide text black">
                     <div class="content">
                         <p>Green Residential Community Home<br/>
                         1311 Sloatsburg Rd.<br/>
@@ -307,52 +369,88 @@ $(function() {
                         973-962-4693<br/>
                         973-962-4525 (Fax)</p>
                         <p>Green Residential Community Home is located in rural Passaic County on the grounds of Ringwood State Park. It is a residential facility for younger male juvenile offenders between the ages of 13-16. The center serves a maximum of 32 residents.</p>
-                        <p>The program's goal is to provide a safe, secure, and structured environment where program participants can learn to modify their behaviors and reactions. The staff, acting as role models, instill a sense of espirit de corps, teach realistic goal setting and promote responsible decision making. The residents learn to adapt to change, accept accountability and develop self-discipline.</p>
+                        <p>The program’s goal is to provide a safe, secure, and structured environment where program participants learn to modify their behaviors and reactions; utilizing A.R.T. (Aggression Replacement Training), and other proven treatment modalities. Through these concepts, residents learn to adapt to change, accept accountability, and develop self-discipline. Individual and group counseling is provided by a contracted Psychologist and Psychiatrist.</p>
+                        <p>The staff, acting as role models, instill a sense of espirit de corps <i>[sic]</i>, teach realistic goal setting and promote responsible decision making. The residents learn to adapt to change, accept accountability and develop self-discipline.</p>
                         <p>Through a contract with the Playwright's Theater of New Jersey, residents are instructed in the writing and performance of one-act plays. Performances take place at the Playwright's Theater in Madison, New Jersey.</p>
                         <p>In addition, residents perform daily community service work on the grounds of Ringwood State Park and Ringwood Manor. The young men of Green RCH also provide assistance to the municipal government, ambulance corps, fire department, a local battered women's shelter and maintain one of the town's main roads through the Adopt-A-Road Program.</p>
                     </div>
-                </div>
-                <div class="slide white">
-                    <div class="content">
-                        <h1>What the fuck?</h1>
+                    <div class="slide" id="esprit">
+                        <div class="content stretch">
+                            <img src="images/esprit-de-corps.png"/>
+                            <div class="caption"><img src="images/green-camp-esprit-de-corps-invert.jpg"/></div>
+                        </div>
+                    </div>
+                    <div class="slide text black">
+                        <div class="content">
+                            <p>Is it ironic that Green RCH hopes to teach esprit de corps: to maintain belief in an institution? Green Camp tried, but it only worked for a few years. After a few years, people lose that conviction. Everybody insists on doing the past better than ever before.</p>
+                            <p>Do you think Green RCH has that same kind of collegiate esprit de corps that has been the hallmark of traditional undergraduate institutions? Green Camp lasted 34 years before the esprit de corps faded out. Green RCH has been around for 39 years. Maybe the same will happen to them soon. Maybe the state will start questioning why they want to create more playwrights and performers, and they'll slash funding for Green RCH.</p>
+                            <p>I suppose these places exist in generations. </p>
+                        </div>
+                        <div class="slide text black">
+                            <div class="content">
+                                <p>But maybe there's some economic opportunity in these young offenders. They are categorized as misbehavior and sent to Green RCH, where they are instilled in <i>A.R.T.</i> and <i>esprit de corps</i>. The theaters and the parks get free labor from these young men's personal enrichment. Then they discover a passion for the arts, and they apply for an arts university. Then they are handed a $200,000 bill and a BFA.</p>
+                                <p>Announcing a partnership for profits: the prison industrial complex meets the education industrial complex: art schools as prisons!</p>
+                                <img src="images/jail-exchange.jpg" class="jail" />
+                                <img src="images/local-school.jpg" class="school" />
+                            </div>
+                            <div class="slide">
+                                <div class="content white">
+                                    <p>All the while, we have a sense of <i>esprit de corps</i>.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="slide text">
+                <!-- This direction discusses/speculates whether this is good or bad. then says, we can never say because we cannot fully image/engage the space -->
+                <div class="slide text black">
                     <div class="content">
                         <p>Green Camp is now a juvenile corrections home? Is Green Camp a prison? Green Camp used to be a place of artistic experience and interdisciplinary collaboration! A symbol of free and open education! A social good! A community!</p>
                         <p>Now? Now it’s Green RCH? A place to help young offenders learn to modify their behaviors and reactions? To instill a sense of esprit de corps? Who gets sent here? Who pays for this? Is there a home test application to get into Green RCH and apprentice with the Playwright’s Theater of New Jersey? Is it free?</p>
                     </div>
-                    <div class="slide">
-                        <div class="content">
-                            <ul>
-                                <li>The agency spent $96,404,959.74 on its employees' salaries in the fiscal year 2012.</li>
-                                <li>In the fiscal year 2011, the conviction rate (against the number of criminal prosecutions closed) was 85%.</li>
-                                <li>In the fiscal year 2014, New Jersey budgeted the Department of Corrections $1,084,476,000.</li>
-                                <li>In the fiscal year 2014, New Jersey budgeted state higher education $2,112,384,000.</li>
-                                <li>In the fiscal year 2014, the Juvenile Justice Commission is estimated to spend $1,524,000.</li>
-                                <li>In the fiscal year 2014, the New Jersey Department of Corrections is expected to revenue $27,000,000.</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
-                <div class="slide">
-                    <div class="content stretch">
-                        <p>to maintain belief in an institution or goal.</p>
-                        <img src="images/esprit-de-corps.png"/>
+                <div class="slide text black">
+                    <div class="content">
+                        <p>It's hard to react to this. We didn't know how to judge Green RCH as an incarnation of Green Camp. Maybe these young men are genuinely benefiting from an exposure to art. Perhaps the overall benefit the juvenile offenders receive from Green RCH is greater than that of Cooper Union students in the 1950s. It's possible that Green RCH is a progression of Green Camp's philosophy.</p>
+                        <p>It's hard to say. We can't even image it.</p>
+                        <!-- now how have a jump to retreating to Ringwood manor, to peter cooper's home -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="slide text">
+    <div class="slide text imgShadows">
         <div class="content">
+            <img src="images/painting-surveying.jpg" />
             <p>They told us how Green Camp united students from all three schools. Green Camp provided an intersection for arts and sciences. People came to Green Camp and discovered interdisciplinary opportunities.</p>
             <img src="images/kitchen.jpg"/>
         </div>
-        <div class="slide text">
+        <div class="slide text imgShadows" id="cameTogether">
             <div class="content">
                 <p>After all, Green Camp started as a place engineers could practice surveying. Then they started letting artists go to Green Camp to be inspired by the scenery. Everybody came together at Green Camp.</p>
                 <img src="images/surveying-art.jpg" />
+            </div>
+        </div>
+        <div class="slide text imgShadows">
+            <div class="content">
+                <!--<p>When President Edwin Burdell announced the initial gift of Green Camp to the Cooper community, he made the somewhat cryptic remark that park of this new "Green Camp" had always been at the center of Cooper Union. Burdell was referring to the real possibility that iron ore from the mines adjacent to the camp had been used to make the beams of the Foundation Building. Green Camp had made Cooper Union, now it was Cooper Union's turn to remake Green Camp.</p>-->
+                <img src="images/cryptic-remark.jpg"/>
+            </div>
+        </div>
+        <div id="essential" class="slide text imgShadows">
+            <div class="content stretch">
+                <img src="images/no-component-2.jpg" />
+                <img src="images/as-equally-important.jpg" />
+                <img src="images/essential-element.jpg" />
+                <img src="images/unique.jpg" />
+                <img src="images/no-component.jpg" />
+            </div>
+            <div class="slide white jump" data-target="#imSorry">
+                <div class="content stretch"><img src="images/present-day.jpg" /></div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <img src="images/book-painting-surveying.jpg" />
             </div>
         </div>
     </div>
@@ -372,8 +470,6 @@ $(function() {
             <img src="images/map-censored-700.jpg" />
         </div>
     </div>
-    
-    
 </div>
 </body>
 </html>
