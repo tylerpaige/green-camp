@@ -2,6 +2,7 @@
     $.fn.extend({
         powerPPT: function(options) {
             var defaults = {
+                bgignore: '.text',
                 controls: false,
                 loader: 'assets/img/loader-white.gif',
                 origin: false,
@@ -58,7 +59,7 @@
                 }
                 
                 $.each(slides, function() {
-                     var slide = $(this).not('.text').children('.content'),
+                     var slide = $(this).not(o.bgignore).children('.content'),
                          img = $(slide).children('img').eq(0);
                      if(img.length > 0){
                          var url = $(img).attr('src');

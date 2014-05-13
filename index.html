@@ -13,7 +13,8 @@
 <script>
 $(function() {	
     $('#container').powerPPT({
-        controls:true
+        controls:true,
+        bgignore:'.text, .ignore'
     });
 });
 </script>	
@@ -23,7 +24,8 @@ $(function() {
 <div id="container">
     <div class="slide" id="origin">
         <div class="content">
-            <h1>Green Camp</h1>
+            <div id="title"><h1>Green Camp</h1>
+            <h3>An A.R.T. Project</h3></div>
             <div class="caption">Control this slideshow with your keyboard arrow keys (see the upper left corner).</div>
             <img src="images/archive-page1-green-shadow.png" alt="" />
         </div>
@@ -48,8 +50,7 @@ $(function() {
                     <p>Green Camp would appear spontaneously in conversations about Cooper's array of problems. Someone says something reductive: they have a solution to some issue, any issue. "If only we cut the president's salary, we would be fine!" Someone else nullifies the solution with context for a larger issue, then they reductively offer a solution to larger context. "It's not just this president. George Campbell's retirement package topped Top 5 lists. We need to trim down the whole administration!" Then it repeats. "It's not just cutting spending, it's bringing in <b>sustainable</b> revenue. Why are we always making one-time sales?"</p>
                     <p>Then someone mentions Green Camp.</p>
                 </div>
-    <!--- fix this --->
-                    <!-- Stacks of conversations -->
+                <!-- tangent on "sustainability" as a buzzword -->
                 <div class="slide text" id="ifWe">
                     <div class="content">
                         <h1>If we had never sold Green Camp, we would be okay today</h1>
@@ -79,8 +80,8 @@ $(function() {
             <div class="slide text">
                 <div class="content">
                     <p>Green Camp became a premonition of the soon-to-be New Cooper Union. It was a destroyed utopia. Green Camp was something good turned in for money. We felt that once Green Camp had been lost, it could only exist in a youthful idealism.</p>
-                    <p><i>Yes, obviously a Green Camp would be great, but pragmatically it just can't work. The poetics are nice, but the fact of the matter is that Green Camps cost money—money we don't have. That's the problem with this generation: they think they deserve all these privileges. Green Camps are a privilege, not a right.</i></p>
-                    <p>And that's when it became apparent that no one talked about present-day Green Camp. Maybe Green Camp still exists somewhere, out there. Maybe Green Camp exists for another institution. If we can find Green Camp still exists, maybe our other idealisms won't seem so far-fetched. If we can find Green Camp, maybe I will feel grounded.</p>
+                    <p><i>Yes, obviously a Green Camp would be great, but pragmatically it just can't work. The poetics are nice, but the fact of the matter is that Green Camps cost money—money we don't have.</i></p>
+                    <p>And then it became apparent that no one talked about present-day Green Camp. Maybe Green Camp still exists somewhere, out there. Maybe Green Camp exists for another institution. If we can find Green Camp still exists, maybe our other idealisms won't seem so far-fetched. If we can find Green Camp, maybe I will feel grounded.</p>
                      <!-- this could be a separate slide with a photo of the green camp book in the lubalin center -->
                 </div>
                 <div class="slide text imgShadows">
@@ -106,7 +107,7 @@ $(function() {
                 </div>
                 <div class="slide text" id="somehow">
                     <div class="content">
-                        <p>Somehow the images were shocking. I wanted to think Green Camp was real, but somewhere deep down I must have convinced myself Green Camp was impossible. But here it was! This was Green Camp recorded on film! This record proved me simultaneously right and wrong! What ambivalence!</p>
+                        <p>Somehow the images were shocking. I wanted to think Green Camp was real, but somewhere deep down I must have convinced myself Green Camp was impossible. But here it was! This was Green Camp recorded on film! This record proved me simultaneously right and wrong!</p>
                     </div>
                 </div>
             </div>
@@ -147,48 +148,60 @@ $(function() {
             <div class="slide text">
                 <!-- This slide needs rewriting -->
                 <div class="content">
-                    <p>But they were, after all, archives. These documents proved Green Camp existed, but not that it currently exists. We tried to find ourselves in the films, but we couldn't do it seamlessly. And it became clear: Green Camp needed a new document. Maybe we had to seek out Green Camp the actual in existence—the place.</p>
+                    <p>But they were, after all, archives. These documents proved Green Camp existed, but we already knew that. They weren’t enough to satisfy the yearning we had for Green Camp. We tried to find ourselves in the films, but we couldn't do it seamlessly. We wanted so badly to understand that Golden Age. And it became clear: Green Camp needed a new document. Maybe we had to seek out Green Camp in existence—the place itself.</p>
                     <p>No one seemed to know what Green Camp was presently. No one could say what happened to Green Camp after it was sold. The institutional memory simply stopped after 1973. If for no other reason, we wanted to find Green Camp for closure. We were so used to finding another container, a larger trouble, a bigger boss. We needed an end to something, for once.</p>
                 </div>
-                <div class="slide text">
+                <div class="slide text" id="artistResidency">
                     <div class="content">
                         <p>What if Green Camp is an artist residency program now?</p>
-                        <p>What if Green Camp was once free but because of continuous structural deficits is forced to charge fees to its residents—leading to a massive drop in applicant interest because artists who can pay for residencies will go to programs that offer more in return than the woods?</p>
+                        <p>What if Green Camp was once free but because of continuous structural deficits it has no choice but to charge fees to its residents—leading to a massive drop in applicant interest because artists who can pay for residencies will go to programs that offer more in return than the woods?</p>
                     </div>
-                    <div class="slide text">
+                    <div class="slide text" id="park">
                         <div class="content">
-                            <p>Green Camp could be a park. At least in that case it would be available for everyone. Green Camp could offer its ethics and inspiration to everyone. It may not be the grounds for collaboration for a university, but maybe that's for the best. Maybe more people will benefit from the Green Camp. Maybe this is a more perfect form of education: a modest space that everyone can activate, not just those who were admitted. Green Camp's sale might have opened its doors! Not closed them!</p>
+                            <p>Green Camp could be a park. At least in that case it would be available for everyone. Green Camp could offer its ethics and inspiration to everyone. It may not be the grounds for collaboration for a university, but maybe that's for the best. Maybe more people will benefit from the Green Camp experience. Maybe this is a more perfect form of education: a modest space that everyone can activate, not just those who were admitted. Green Camp's sale might have opened its doors! Not closed them!</p>
                         </div>
-                        <div class="slide text">
+                        <div class="slide text" id="anotherSchool">
                             <div class="content">
                                 <p>It's possible that another Cooper exists our there... There could be some other institution offering a free arts and sciences education to young people exclusively on the basis of merit. They could have picked up where Green Camp left off. I wonder if Green Camp simply changed hands. Maybe nothing has changed but the owner.</p>
                             </div>
-                            <div class="slide">
+                            <div class="slide" id="NYU">
                                 <div class="content stretch white shadow">
-                                    <h2>I bet NYU bought it for its Art-as-Activism, Community Practice, and Public Relational Aesthetics MFA Program</h2>
+                                    <p>I bet NYU bought it for its Art-as-Activism, Community Practice, and Public Relational Aesthetics MFA Program</p>
                                     <img src="images/nyu-mfa.jpg"/>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slide text">
-                        <div class="content">
-                            <img src="images/nyt-botanic-garden.jpg" />
-                            <p>Oh god, what if Green Camp is one of those public parks that's private to a certain type of public: like a public lake that's landlocked by private properties so there's no public entrance, or a park that removes all its benches and trashcans so the homeless won't spend too much time there.</p>
-                            <img src="images/privatepark.png" />
-                        </div>
-                        <div class="slide text">
+                        <div class="slide text jump" id="abandoned" data-target="#opportunities">
                             <div class="content">
-                                <p>What if Green Camp is entirely private property? What if Green Camp is just a bunch lake houses and the tennis courts are for the winding housing development that wraps around it.</p>
-                                <p>Or maybe some multi-millionaire industrialist bought the whole thousand acres and is just sitting on it until he thinks of a use for it. You know, maybe the multi-millionaire industrialist some type of closeted philanthropist. We could find him at Green Camp and appeal for something!</p>
-                                <img src="images/wizard.jpg"/>
-                                <!-- Off of here you can speculate about how we could take of an abandoned space. Then when you say "If we we never sold it", you can jump to here (or vice versa). -->
-                                <!-- alternatively this could link to history about green camp (how it was owned as peter cooper's estate. this could be done, i think, without giving too much information and making green camp seem like a real place. -->
+                                <p>For all we know, it's possible Cooper Union never even sold Green Camp! Maybe it was just too expensive to maintain, and they abandoned it. It could still belong to Cooper, we've just forgotten it. We're so in love with our memories of Green Camp that we forget we still have Green Camp! It could still be there! Waiting for us!</p>
                             </div>
                         </div>
                     </div>
+                    <div class="slide text" id="privatePark">
+                        <div class="content">
+                            <img src="images/nyt-botanic-garden.jpg" />
+                            <!-- this may be a moment where I can branch away from speculation and move into pessimism-->
+                            <p>Oh god, what if Green Camp is one of those public parks that's private to a certain type of public: like a public lake that's landlocked by private properties so there's no public entrance, or a park that removes all its benches and trashcans so the homeless won't spend too much time there.</p>
+                            <img src="images/privatepark.png" />
+                        </div>
+                    </div>
+                    <div class="slide text" id="privateProperty">
+                        <div class="content">
+                            <p>What if Green Camp is entirely private property? What if Green Camp is just a bunch lake houses and the tennis courts are for the winding housing development that wraps around it.</p>
+                            <p>Or maybe some multi-millionaire industrialist bought the whole thousand acres and is just sitting on it until he thinks of a use for it. You know, maybe the multi-millionaire industrialist is some type of closeted philanthropist. We could find him at Green Camp and appeal for something!</p>
+                            <img src="images/wizard.jpg"/>
+                            <!-- Off of here you can speculate about how we could take of an abandoned space. Then when you say "If we we never sold it", you can jump to here (or vice versa). -->
+                            <!-- alternatively this could link to history about green camp (how it was owned as peter cooper's estate. this could be done, i think, without giving too much information and making green camp seem like a real place. -->
+                        </div>
+                    </div>
+                    <div class="slide text" id="opportunities">
+                        <div class="content">
+                            <p>We could take over the space as a headquarters for a student union, or a neutral space for organizing against tuition. We could even build an entire new school, rooted in the foundational philosophy: a derivative school of a lost philosophy planted in a lost space!</p>
+                            <p>Or we could set up something to make the school some money. That for-profit residency program didn't sound so bad. Or we could sell Sunday-painting classes to the local senior citizens. Or start a gallery to represent some graduates! It's ground just waiting to be developed.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide white">
+                <div class="slide white" id="cv">
                     <div class="content">
                         <p>CV check: did you go when it was free or not?</p>
                     </div>
@@ -196,7 +209,7 @@ $(function() {
             </div>
             <div class="slide text">
                 <div class="content">
-                    <p>We used the archived material and the stories we heard to find Green Camp. Green Camp was likely some green colored space on a map, we thought.</p>
+                    <p>We used the archived material and the stories we heard to find Green Camp.</p>
                 </div>
                 <!-- examples and images of archived material here -->
             </div>
@@ -309,9 +322,10 @@ $(function() {
                     <p>Driving down Farm Road—just as it was getting dark. At one lane, we had to roll down the hilly road slowly, our excitement peaking as we thought we'd finally reached Green Camp.</p>
                 </div>
             </div>
-            <div class="slide">
+            <div class="slide" id="doNotEnter">
                 <div class="content fill">
                     <div class="caption white shadow">After the last hill, the road stopped. There was a building like we'd seen in the archives, green spaces like we'd seen on a map, but all behind a "Do Not Enter". </div>
+                    <!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=ringwood+manor,+nj&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=46.092115,58.974609&amp;ie=UTF8&amp;hq=&amp;hnear=&amp;ll=41.13623,-74.256262&amp;spn=0.006295,0.006295&amp;t=m&amp;layer=c&amp;cbll=41.134195,-74.259077&amp;panoid=rmVTxJYbLj6VK44CGC1yQg&amp;cbp=12,271.92,,0,-4.02&amp;output=svembed"></iframe>-->
                     <img src="images/farm-rd.jpg"/>
                 </div>
             </div>
@@ -328,9 +342,9 @@ $(function() {
                             Green RCH: New Jersey Law &amp; Public Safety Juvenile Justice Commission
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="slide" id="recoil">
                         <div class="content white">
-                            <p>We recoiled—not in defeat, but in caution. The inheritance of the space was confusing. We began to question what we were actually doing at Green Camp.</p>
+                            <p>We recoiled—not in defeat, but in caution. The inheritance of the space was confusing. For the first time, we began to question what we were actually doing at Green Camp.</p>
                             <!-- what do you actually want to say here? recoiled, went back to contemplate because we first questioned what connection we actually had to the space. -->
                         </div>
                     </div>
@@ -350,15 +364,21 @@ $(function() {
                         <div class="content fill">
                             <img src="images/manor-closed.jpg" />
                         </div>
-                        <div class="slide jump" data-target="#origin">
-                            <div class="content white">
-                                <h1>And yet, sometimes you have no choice but to admit defeat.</h1>
+                        <div class="slide">
+                            <div class="content white cover">
+                                <h1>And yet, at some point, you must admit defeat.</h1>
+                                <img src="images/megaphones.jpg"/>
                             </div>
                         </div>
+                        <div class="slide jump" data-target="#origin">
+                        </div>
                     </div>
-                    <div class="slide">
-                        <div class="content fill"><img src="images/ringwood-closed.jpg"/></div>
-                    </div>
+                    <!-- nice image, but really fucks up the flow of it all -->
+<!--                    <div class="slide">
+                        <div class="content">
+                            <img src="images/manor-invert.jpg" />
+                        </div>
+                    </div>-->
                 </div>
                 <div class="slide text black">
                     <div class="content">
@@ -383,12 +403,12 @@ $(function() {
                     <div class="slide text black">
                         <div class="content">
                             <p>Is it ironic that Green RCH hopes to teach esprit de corps: to maintain belief in an institution? Green Camp tried, but it only worked for a few years. After a few years, people lose that conviction. Everybody insists on doing the past better than ever before.</p>
-                            <p>Do you think Green RCH has that same kind of collegiate esprit de corps that has been the hallmark of traditional undergraduate institutions? Green Camp lasted 34 years before the esprit de corps faded out. Green RCH has been around for 39 years. Maybe the same will happen to them soon. Maybe the state will start questioning why they want to create more playwrights and performers, and they'll slash funding for Green RCH.</p>
+                            <p>Do you think Green RCH has that same kind of collegiate esprit de corps that has been the hallmark of traditional undergraduate institutions? Green Camp lasted 34 years before the esprit de corps faded out. Green RCH has been around for 39 years. Maybe the same thing will happen to them soon. Maybe the state will start questioning why they want to create more playwrights and performers, and they'll slash funding for Green RCH.</p>
                             <p>I suppose these places exist in generations. </p>
                         </div>
-                        <div class="slide text black">
+                        <div class="slide text black" id="economics">
                             <div class="content">
-                                <p>But maybe there's some economic opportunity in these young offenders. They are categorized as misbehavior and sent to Green RCH, where they are instilled in <i>A.R.T.</i> and <i>esprit de corps</i>. The theaters and the parks get free labor from these young men's personal enrichment. Then they discover a passion for the arts, and they apply for an arts university. Then they are handed a $200,000 bill and a BFA.</p>
+                                <p>But maybe there's some economic opportunity in these young offenders. They are categorized as misbehavior and sent to Green RCH, where they are instilled <i>A.R.T.</i> and <i>esprit de corps</i>. The theaters and the parks get free labor from these young men's personal enrichment. Then they discover a passion for the arts, and they apply for an arts university. Then they are handed a $200,000 bill and a BFA.</p>
                                 <p>Announcing a partnership for profits: the prison industrial complex meets the education industrial complex: art schools as prisons!</p>
                                 <img src="images/jail-exchange.jpg" class="jail" />
                                 <img src="images/local-school.jpg" class="school" />
@@ -407,8 +427,13 @@ $(function() {
                         <p>Green Camp is now a juvenile corrections home? Is Green Camp a prison? Green Camp used to be a place of artistic experience and interdisciplinary collaboration! A symbol of free and open education! A social good! A community!</p>
                         <p>Now? Now it’s Green RCH? A place to help young offenders learn to modify their behaviors and reactions? To instill a sense of esprit de corps? Who gets sent here? Who pays for this? Is there a home test application to get into Green RCH and apprentice with the Playwright’s Theater of New Jersey? Is it free?</p>
                     </div>
+                    <div class="slide jump" data-target="#economics">
+                        <div class="content white">
+                            <p>A camp is a camp, I suppose.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="slide text black">
+                <div class="slide text black jump" data-target="#recoil">
                     <div class="content">
                         <p>It's hard to react to this. We didn't know how to judge Green RCH as an incarnation of Green Camp. Maybe these young men are genuinely benefiting from an exposure to art. Perhaps the overall benefit the juvenile offenders receive from Green RCH is greater than that of Cooper Union students in the 1950s. It's possible that Green RCH is a progression of Green Camp's philosophy.</p>
                         <p>It's hard to say. We can't even image it.</p>

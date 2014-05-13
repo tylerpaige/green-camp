@@ -19,6 +19,11 @@
     /*position: relative;*/
     z-index: 2;
 }
+#origin>.content>#title{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 25%;
+}
 
 .slide .content h1{
     font-style: italic;
@@ -51,7 +56,7 @@
     /*background: whitesmoke;*/
     /*padding: 5px 10px;*/
     color: white;
-    text-shadow: -3px -10px 10px rgba(0,0,0,.5);
+    text-shadow: -3px -6px 10px rgba(0,0,0,.7);
 }
 #cameTogether img{
     box-shadow: 30px 30px 20px rgba(0,0,0,.5);
@@ -85,4 +90,46 @@
 .school{
     border: rgb(127,0,127) 5px solid;
     box-shadow: -30px -20px 30px rgba(0,0,255,.4);
+}
+
+/* iframe shit */
+#doNotEnter iframe{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#doNotEnter .caption{
+    z-index: 2;
+}
+
+/* Speculation stack */
+#artistResidency>.content{
+    font-size: 1.9rem;
+}
+#cv>.content{
+    font-size: 2.3rem;
+}
+#park>.content{
+    font-size: 2.3rem;
+}
+#privatePark>.content{
+    font-size: 2.8rem;
+}
+#privateProperty>.content{
+    font-size: 3.3rem;
+}
+#opportunities>.content{
+    font-size: 3.8rem;
+}
+#abandoned>.content{
+    font-size: 3.8rem;
+}
+#anotherSchool>.content{
+    font-size: 2.8rem;
+}
+#NYU>.content{
+    font-size: 3.8rem;
 }

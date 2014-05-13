@@ -9,3 +9,4 @@ This is a reference for what I should change on the powerppt git repo
 - Changed manageControls to toggle visibility not display (now it doesn't fade, but it maintains layout even when hidden)
 - Changed controls' sizes
 - Changed default slide font size (now 1.9rem --> 19px)
+- Shadow and Outline combination        

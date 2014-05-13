@@ -64,9 +64,12 @@
 - After Green RCH sign, Green Camp should only be referred to as Green RCH. 
 --- 
 ## So, what's this actually about to you?
-1. All-too-common process of reaching for goals, only to be barred access, and to navigate restrictions and obstacles.
-2. Explorations of past/present/future and their overlaps. This is a carryover from the initial thoughts going into the Green Camp/Ringwood videos, but my hope is to decipher what role the past actually has in the present. To understand the logic of nostalgia and its impact on future visions. On a similar note, I am thinking about how cyclical it all is, and still predictable, even though we keep telling ourselves to "learn from history's mistakes"
-3. Speculation/expectations and eventual realization
+(in order)
+1. Speculations/expectations and realization
+2. Explorations of history(memory)/present/future and their overlaps. Deciphering what role the past plays in the present, *deciphering the logic of nostalgia and its impact on future visions*. Thinking about the inevitable cyclical nature of things while we maintain "learn from history's mistakes". [all of this is a carryover from the initial Green Camp and Ringwood videos]
+3. Losing (time, history, memory, orientation)
+4. All-too-common process of reaching for goals, only to be barred access, and to navigate restrictions and obstacles → _eventual admit of defeat_
+5. (and only fourth) Speculation about relations between the prison industrial complex and the education industrial complex
 
 ## Asher
 - Narrative doesn't start with a hook. It's not really an introduction. It doesn't say anything about the hunt.
@@ -85,3 +88,11 @@
 --- but *where?*
 - What is the significance of having a definitive start point? I can agree with having multiple valid endpoints, but right now that doesn't seem to be the case. they just end, they're not definitive.
 - A critique on slideshows? Yes, I guess it is.
+
+--- 
+## Angus part 2
+- First slide might immediately suggest it as a work of fiction
+- Up contrast on the 1939 edited text image (make it really apparently that it has been glued together)
+- -Sustainable slide could be a target for a jump-
+- Embedded street view
+- Highlight address on jail exchange screenshots 

@@ -43,3 +43,19 @@ Story Arc:
 Another cycle of barring. Does that mean I have to start another whole cycle of building and breaking mythology?
 
 Should there not be some huge moment that the mythology has been broken? A realization that perhaps it was *just* a myth?
+
+## Admitting defeat
+There's a moment (I think it's actually the transition from Green RCH to Ringwood Manor) where I say "we weren't defeated" and then maybe 3 slides later you say "but sometimes you have to admit defeat".
+
+I think there could probably be a better connection between these two. They seem sort of randomly juxtaposed. 
+
+Maybe instead of "And yet, sometimes you have no choice but to admit defeat" → "And yet, maybe we were defeated." 
+- "And yet, at some point, you must admit defeat"
+- "And yet, at some point, you have no choice but to admit defeat"
+
+## Stylistic notes
+- I'm probably "I suppose", "Maybe", and "Perhaps" too much. They are part of speculations, yes, but I don't have to recycle the same language so much.
+-- 15 instances of "maybe"
+-- 1 instance of "I suppose"
+-- 1 instance of "perhaps"
+- On the topic of speculations, I enjoy it when the speculations are sized small. I can imagine a nice formal quality on the stack of speculations, where the font starts small (or normal) and just gets huge
